@@ -19,3 +19,42 @@ provider "aws" {
 }
 ```
 
+2. Resources
+Describes the infrastructure components.
+```ssh
+resource "aws_instance" "example" {
+  ami           = "ami-0c55b159cbfafe1f0"
+  instance_type = "t2.micro"
+}
+```
+
+3. Variables
+Used for parameterizing configurations.
+```ssh
+variable "region" {
+  default = "us-west-2"
+}
+```
+
+4. Outputs
+Return values from a Terraform module or configuration.
+```ssh
+output "instance_ip" {
+  value = aws_instance.example.public_ip
+}
+```
+
+5. Modules
+Reusable and composable units of configuration.
+```ssh
+module "network" {
+  source = "./network"
+}
+```
+
+🔁 **Terraform Workflow**
+terraform init      # Downloads required providers and sets up the working directory
+terraform plan      # Previews the changes that will be made to the infrastructure
+terraform apply     # Executes the planned changes to create/update resources
+terraform destroy   # Destroys the infrastructure created by Terraform
+
