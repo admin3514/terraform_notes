@@ -64,3 +64,9 @@ module "network" {
 3. *terraform apply*     - Executes the planned changes to create/update resources <br>
 4. *terraform destroy*   - Destroys the infrastructure created by Terraform <br>
 
+<hr>
+
+🗃 **Terraform State** <br>
+ - Terraform stores information about the infrastructure in a state file (terraform.tfstate). <br>
+ - This allows Terraform to track changes over time.  <br>
+ - Remote backends (S3, Azure Blob, GCS) are recommended for team use. <br>
