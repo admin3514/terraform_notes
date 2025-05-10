@@ -99,6 +99,7 @@ module "vpc" {
 <hr>
 
 📘 **Example Project Structure**
+```ssh
 terraform/
 │
 ├── main.tf
@@ -110,6 +111,6 @@ terraform/
 │       ├── main.tf
 │       ├── variables.tf
 │       └── outputs.tf
-
+```
 
  
