@@ -3,12 +3,16 @@
 🌐 **What is Terraform?** <br>
 Terraform is an open-source **Infrastructure as Code (IaC)** tool developed by **HashiCorp**. It allows you to define and provision infrastructure using a high-level **configuration language (HCL - HashiCorp Configuration Language).**
 
+<hr>
+
 🧱 **Key Features**
  - Infrastructure as Code – Automate infrastructure setup.
  - Idempotency – Running the same script results in the same infrastructure.
  - Execution Plan – Preview changes before applying them.
  - State Management – Keeps track of infrastructure state.
  - Provider Support – Works with AWS, Azure, GCP, etc.
+
+<hr>
 
 🔧 **Terraform Core Concepts**
 1. Providers
@@ -51,6 +55,8 @@ module "network" {
   source = "./network"
 }
 ```
+
+<hr>
 
 🔁 **Terraform Workflow**
 terraform init      # Downloads required providers and sets up the working directory
