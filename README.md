@@ -70,3 +70,18 @@ module "network" {
  - Terraform stores information about the infrastructure in a state file **(terraform.tfstate)**. <br>
  - This allows Terraform to track changes over time.  <br>
  - Remote backends (S3, Azure Blob, GCS) are recommended for team use. <br>
+
+ Example backend config: <br>
+ ```ssh
+ terraform {
+  backend "s3" {
+    bucket = "my-tf-state"
+    key    = "dev/terraform.tfstate"
+    region = "us-west-2"
+  }
+ }
+```
+
+<hr>
+
+ 
