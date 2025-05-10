@@ -96,4 +96,20 @@ module "vpc" {
 }
 ```
 
+<hr>
+
+📘 **Example Project Structure**
+terraform/
+│
+├── main.tf
+├── variables.tf
+├── outputs.tf
+├── terraform.tfvars
+├── modules/
+│   └── vpc/
+│       ├── main.tf
+│       ├── variables.tf
+│       └── outputs.tf
+
+
  
