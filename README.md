@@ -84,4 +84,16 @@ module "network" {
 
 <hr>
 
+📦 **Modules** <br>
+ - Root Module: The main working directory with **.tf** files. <br>
+ - Child Modules: Called from other modules, can be reused. <br>
+
+ Example: <br>
+ ```ssh
+module "vpc" {
+  source = "terraform-aws-modules/vpc/aws"
+  version = "3.0.0"
+}
+```
+
  
