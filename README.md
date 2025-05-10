@@ -9,3 +9,13 @@ Terraform is an open-source **Infrastructure as Code (IaC)** tool developed by *
  - Execution Plan – Preview changes before applying them.
  - State Management – Keeps track of infrastructure state.
  - Provider Support – Works with AWS, Azure, GCP, etc.
+
+🔧 **Terraform Core Concepts**
+1. Providers
+Responsible for managing the lifecycle of resources (e.g., AWS, Azure, GCP).
+```ssh
+provider "aws" {
+  region = "us-west-2"
+}
+```
+
