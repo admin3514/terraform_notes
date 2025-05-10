@@ -58,9 +58,9 @@ module "network" {
 
 <hr>
 
-🔁 **Terraform Workflow**
-terraform init      # Downloads required providers and sets up the working directory
-terraform plan      # Previews the changes that will be made to the infrastructure
-terraform apply     # Executes the planned changes to create/update resources
-terraform destroy   # Destroys the infrastructure created by Terraform
+🔁 **Terraform Workflow** <br>
+1.terraform init      - Downloads required providers and sets up the working directory <br>
+2.terraform plan      - Previews the changes that will be made to the infrastructure <br>
+3.terraform apply     - Executes the planned changes to create/update resources <br>
+4.terraform destroy   - Destroys the infrastructure created by Terraform <br>
 
