@@ -67,6 +67,6 @@ module "network" {
 <hr>
 
 🗃 **Terraform State** <br>
- - Terraform stores information about the infrastructure in a state file (terraform.tfstate). <br>
+ - Terraform stores information about the infrastructure in a state file **(terraform.tfstate)**. <br>
  - This allows Terraform to track changes over time.  <br>
  - Remote backends (S3, Azure Blob, GCS) are recommended for team use. <br>
