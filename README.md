@@ -244,3 +244,7 @@ resource "aws_instance" "web" {
 
 ![Alt text](output.png)
 
+
+<hr>
+
+**Day 03 With Terraform**
