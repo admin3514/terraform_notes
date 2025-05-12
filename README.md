@@ -126,6 +126,12 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashi
 sudo apt update && sudo apt install terraform
 ```
 
+*git clone* - git clone <link> download code from windows to EC2 machine.  <br>
+*terraform init* - Initialize the backend, Install provider plugins, Configure the working directory. <br>
+*terraform plan* - The terraform plan command is used to preview the changes Terraform will make to your infrastructure based on the current configuration files and the existing state. <br>
+*terraform apply* - The terraform apply command is used to execute the changes defined in your Terraform configuration—provisioning, updating, or destroying infrastructure as needed. <br>
+*terraform destroy* - The terraform destroy command is used to delete all the infrastructure that was created using your Terraform configuration. It is the reverse of terraform apply. <br>
+
 *Step 2 : Creation of Simple EC2 Instance*  <br>
 
 **first.tf :**
