@@ -118,4 +118,21 @@ terraform/
 
 **Day 01 With Terraform**
 
-*Creation of EC2 Instance*
+*Creation of EC2 Instance*  <br>
+
+**first.tf :**
+
+```ssh
+provider "aws" {
+  region = "ap-south-1" # or your preferred region
+}
+
+resource "aws_instance" "web" {
+  ami           = "ami-0e35ddab05955cf57"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "MyWebServer"
+  }
+}
+```
