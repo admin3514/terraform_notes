@@ -163,6 +163,7 @@ resource "aws_instance" "web" {
 
 **first.tf :**
 
+*To store files in centralized location i.e s3 bucket*
 ```ssh
 terraform {
   backend "s3" {
