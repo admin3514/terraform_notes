@@ -114,3 +114,8 @@ terraform/
 ```
 
 <hr>
+
+
+**Day 01 With Terraform**
+
+*Creation of EC2 Instance*
