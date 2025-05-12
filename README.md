@@ -118,7 +118,7 @@ terraform/
 
 **Day 01 With Terraform**
 
-*Terraform Installation on EC2 Instance* <br>
+*Step 1 : Terraform Installation on EC2 Instance* <br>
 
 ```ssh
 wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
@@ -126,7 +126,7 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashi
 sudo apt update && sudo apt install terraform
 ```
 
-*Creation of Simple EC2 Instance*  <br>
+*Step 2 : Creation of Simple EC2 Instance*  <br>
 
 **first.tf :**
 
