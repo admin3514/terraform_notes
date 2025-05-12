@@ -242,6 +242,6 @@ resource "aws_instance" "web" {
 
 *//Output :*
 
-![Alt text](Screenshot 2025-05-12 142312)
+![Alt text](Screenshot 2025-05-12 142312.png)
 
 
