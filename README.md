@@ -240,5 +240,7 @@ resource "aws_instance" "web" {
 }
 ```
 
+*// Output :*
+
 ![Alt text](output.png)
 
