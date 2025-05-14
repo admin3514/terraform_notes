@@ -374,4 +374,13 @@ terraform {
 }
 ```
 
+<hr>
+
+**Day 04**
+
+**Terraform Provisioners :** Provisioners in Terraform are used to execute scripts or commands on a local machine or remote resource after it is created or destroyed.  <br>
+
+*Types of Provisioners :* <br>
+1. **local-exec :** Runs commands on the machine where Terraform is executed (your local machine or CI/CD environment). <br>
+2. **remote-exec :** Runs commands on the resource being created, typically over SSH (Linux) or WinRM (Windows). <br>
 
