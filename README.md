@@ -384,3 +384,58 @@ terraform {
 1. **local-exec :** Runs commands on the machine where Terraform is executed (your local machine or CI/CD environment). <br>
 2. **remote-exec :** Runs commands on the resource being created, typically over SSH (Linux) or WinRM (Windows). <br>
 
+<hr>
+
+**Diff in variable.tf v/s terraform.tfvars**
+
+🔹 *variables.tf* — Variable Definitions  <br>
+    - This file is where you declare input variables — their names, types, descriptions, and optional default values. <br>
+    - Must need of block <br>
+
+ **Example :**
+ ```ssh
+# variables.tf
+variable "region" {
+  description = "AWS region to deploy resources in"
+  type        = string
+  default     = "us-east-1"
+}
+```
+
+🔸 *terraform.tfvars* — Variable Values
+    - This file is where you set values for the variables defined in variables.tf.  <br>
+    - No need of block {} we can directly assigns values  <br>
+    - High priority than variable.tf file <br>
+
+ **Example :**
+ ```ssh
+# terraform.tfvars
+region        = "us-west-2"
+instance_type = "t2.micro"
+```
+
+
+<hr>
+
+🧱 **Terraform Modules — Explained**  <br>
+In Terraform, a module is a container for multiple resources that are used together. Modules allow you to:  <br>
+ - Organize and reuse code   <br>
+ - Make configurations cleaner and more scalable  <br>
+ - Follow DRY principles (Don't Repeat Yourself)  <br>
+
+```ssh
+terraform/
+│
+├── main.tf
+├── variables.tf
+├── outputs.tf
+├── terraform.tfvars
+├── modules/
+│   └── vpc/
+│       ├── main.tf
+│       ├── variables.tf
+│       └── outputs.tf
+```
+
+<hr>
+
